@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FormConcesionariaActivity">
+
+    <Button
+        android:id="@+id/btnSubmitFormConcesionaria"
+        android:layout_width="228dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="32dp"
+        android:autoText="false"
+        android:background="@color/black"
+        android:backgroundTint="@color/black"
+        android:text="@string/edit_concesionaria_text"
+        android:textColor="@color/white"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etCiudadConcesionaria"
+        android:layout_width="317dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="312dp"
+        android:ems="10"
+        android:hint="@string/hint_txt_ciudad"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEslogan" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/label_ciudad"
+        app:layout_constraintBottom_toTopOf="@+id/etCiudadConcesionaria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etCalleConsecionaria"
+        android:layout_width="317dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="212dp"
+        android:ems="10"
+        android:hint="@string/hint_txt_direccion"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEslogan" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_calle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <EditText
+        android:id="@+id/etNumeroConcesionaria"
+        android:layout_width="317dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="112dp"
+        android:ems="10"
+        android:hint="@string/hint_txt_numero"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEslogan" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/label_numero"
+        app:layout_constraintBottom_toTopOf="@+id/etNumeroConcesionaria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombreConcesionaria"
+        android:layout_width="317dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="408dp"
+        android:ems="10"
+        android:hint="@string/hint_txt_nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEslogan" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/label_nombre"
+        app:layout_constraintBottom_toTopOf="@+id/etNombreConcesionaria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="435dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/autonexus_logo" />
+
+    <TextView
+        android:id="@+id/txtFormTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="520dp"
+        android:fontFamily="@font/lato_bold_italic"
+        android:text="@string/edit_concesionaria_text"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ConcesionariaDetailActivity">
+
+    <Button
+        android:id="@+id/btnAgregarConcesionaria4"
+        android:layout_width="184dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/btn_add_auto_text"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnAgregarConcesionaria5"
+        android:layout_width="266dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/btn_ver_ubicacion_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnEliminarConsecionaria3"
+        android:layout_width="159dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/btn_remove_auto_text"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="532dp"
+        android:fontFamily="@font/lato_bold_italic"
+        android:text="@string/concesionaria_detail"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/txtNombreConcesionaria"
+        android:layout_width="308dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato"
+        android:text="Gonzalez S.A"
+        android:textColor="@color/material_dynamic_neutral70"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="435dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/autonexus_logo" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="357dp"
+        android:layout_height="296dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreConcesionaria"
+        tools:listitem="@android:layout/list_content" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="63dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/editar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

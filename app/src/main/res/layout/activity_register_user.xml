@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterUserActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.FormAutoActivity"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="71dp">
+
+        <Button
+            android:id="@+id/btnSubmitFormRegister"
+            android:layout_width="228dp"
+            android:layout_height="61dp"
+            android:layout_marginBottom="16dp"
+            android:autoText="false"
+            android:background="@color/black"
+            android:backgroundTint="@color/black"
+            android:text="@string/txt_btn_registrarse"
+            android:textColor="@color/white"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="435dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/autonexus_logo" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/label_confirm_password_usuario"
+            app:layout_constraintBottom_toTopOf="@+id/etConfirmPasswordUsuario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.206"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etPasswordUsuario"
+            android:layout_width="317dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="180dp"
+            android:ems="10"
+            android:hint="@string/hint_txt_password"
+            android:inputType="textPersonName|textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.563"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEslogan" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/label_password_usuario"
+            app:layout_constraintBottom_toTopOf="@+id/etPasswordUsuario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.151"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etEmailUsuario"
+            android:layout_width="317dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="276dp"
+            android:ems="10"
+            android:hint="@string/hint_txt_email_usuario"
+            android:inputType="textPersonName|textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEslogan" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="@string/label_email_usuario"
+            app:layout_constraintBottom_toTopOf="@+id/etEmailUsuario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.141"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etApellidoUsuario"
+            android:layout_width="317dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="372dp"
+            android:ems="10"
+            android:hint="@string/hint_txt_apellido_usuario"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.563"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEslogan" />
+
+        <EditText
+            android:id="@+id/etNombreUsuario"
+            android:layout_width="317dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="464dp"
+            android:ems="10"
+            android:hint="@string/hint_txt_nombre_usuario"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.553"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEslogan" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/label_apellido_usuario"
+            app:layout_constraintBottom_toTopOf="@+id/etApellidoUsuario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.141"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/label_nombre_usuario"
+            app:layout_constraintBottom_toTopOf="@+id/etNombreUsuario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.147"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etConfirmPasswordUsuario"
+            android:layout_width="317dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:hint="@string/hint_txt_confirm_password"
+            android:inputType="textPersonName|textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/btnSubmitFormRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtFormAuto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold_italic"
+            android:text="@string/label_registro"
+            android:textColor="@color/black"
+            android:textSize="38sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="435dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/autonexus_logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

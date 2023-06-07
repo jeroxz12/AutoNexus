@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_table_user">CREATE TABLE User (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name VARCHAR(50),
+    last_name VARCHAR(90),
+    email VARCHAR(255),
+    password VARCHAR(255),
+    admin INTEGER
+);</string>
+    <string name="create_table_car">CREATE TABLE Car (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    model VARCHAR(100),
+    brand VARCHAR(100),
+    price DECIMAL(18, 2),
+    year INTEGER,
+    color VARCHAR(100)
+);</string>
+    <string name="create_table_concessionary">CREATE TABLE Concessionary (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name VARCHAR(50),
+    city VARCHAR(60),
+    address VARCHAR(255),
+    number VARCHAR(30)
+);</string>
+    <string name="create_table_car_per_concessionary">CREATE TABLE Car_Per_Concessionary (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_car INTEGER,
+    id_concessionary INTEGER,
+    FOREIGN KEY (id_car) REFERENCES Car(id),
+    FOREIGN KEY (id_concessionary) REFERENCES Concessionary(id)
+);</string>
+</resources>
