@@ -16,23 +16,12 @@
         app:srcCompat="@drawable/autonexus_logo" />
 
     <Button
-        android:id="@+id/btnAgregarConcesionaria"
-        android:layout_width="160dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="132dp"
-        android:text="@string/btn_add_concesionaria_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <Button
         android:id="@+id/btnAgregarConcesionaria3"
         android:layout_width="179dp"
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:text="@string/btn_volver_atras_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -50,23 +39,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <Button
-        android:id="@+id/btnEliminarConsecionaria"
-        android:layout_width="160dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="224dp"
-        android:layout_marginTop="132dp"
-        android:text="@string/btn_remove_concesionaria_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvConcesionarias"
         android:layout_width="359dp"
-        android:layout_height="399dp"
-        android:layout_marginBottom="4dp"
+        android:layout_height="321dp"
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         tools:listitem="@android:layout/list_content" />
+
+    <ImageButton
+        android:id="@+id/imgBtnAdd"
+        android:layout_width="69dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="316dp"
+        android:contentDescription="Add a concessionary button"
+        app:layout_constraintBottom_toTopOf="@+id/rvConcesionarias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.793"
+        app:srcCompat="@drawable/boton_agregar_1_" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

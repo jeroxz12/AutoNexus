@@ -26,15 +26,15 @@
             app:iconTint="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintHorizontal_bias="0.568"
             app:layout_constraintStart_toStartOf="parent"
             app:rippleColor="@color/black" />
 
         <ImageView
             android:id="@+id/imageView6"
-            android:layout_width="435dp"
-            android:layout_height="115dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="413dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="4dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/autonexus_logo" />
@@ -63,7 +63,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.563"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtEslogan" />
+ />
 
         <TextView
             android:id="@+id/textView10"
@@ -89,7 +89,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.542"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtEslogan" />
+   />
 
         <TextView
             android:id="@+id/textView14"
@@ -115,7 +115,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.563"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtEslogan" />
+/>
 
         <EditText
             android:id="@+id/etNombreUsuario"
@@ -129,8 +129,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.553"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtEslogan" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView6"
@@ -158,35 +157,30 @@
             android:id="@+id/etConfirmPasswordUsuario"
             android:layout_width="317dp"
             android:layout_height="58dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="16dp"
             android:ems="10"
             android:hint="@string/hint_txt_confirm_password"
             android:inputType="textPersonName|textPassword"
             app:layout_constraintBottom_toTopOf="@+id/btnSubmitFormRegister"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.563"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/txtFormAuto2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
             android:fontFamily="@font/lato_bold_italic"
             android:text="@string/label_registro"
             android:textColor="@color/black"
             android:textSize="38sp"
+            app:layout_constraintBottom_toTopOf="@+id/etNombreUsuario"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="435dp"
-        android:layout_height="115dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/autonexus_logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

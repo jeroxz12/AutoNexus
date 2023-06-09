@@ -11,7 +11,7 @@
     <string name="btn_remove_auto_text">Eliminar Auto</string>
     <string name="btn_ver_ubicacion_text">Ver Ubicación en Mapa</string>
     <string name="btn_volver_atras_text">Volver Atrás</string>
-    <string name="label_username">Nombre de Usuario:</string>
+    <string name="label_user_email">Email:</string>
     <string name="label_password">Contraseña:</string>
     <string name="label_nombre">Nombre:</string>
     <string name="label_ciudad">Ciudad:</string>

@@ -12,26 +12,19 @@
         android:theme="@style/Theme.ACN4AV_Jeronimo_Lago"
         tools:targetApi="31">
         <activity
-            android:name=".RegisterUserActivity"
+            android:name=".activities.RegisterUserActivity"
             android:exported="false" />
         <activity
-            android:name=".FormAutoActivity"
+            android:name=".activities.FormAutoActivity"
             android:exported="false" />
         <activity
-            android:name=".FormConcesionaria"
+            android:name=".activities.FormConcesionariaActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.login.LoginActivity"
-            android:exported="false"
-            android:label="@string/title_activity_login" />
-        <activity
-            android:name=".ConcesionariaDetailActivity"
+            android:name=".activities.ConcesionariaDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".ConcesionariasActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HomeActivity"
+            android:name=".activities.ConcesionariasActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
