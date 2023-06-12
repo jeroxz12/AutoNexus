@@ -1,5 +1,7 @@
 package com.example.acn4av_jeronimo_lago.entities;
 
+import java.util.List;
+
 public class Concessionary {
     private Integer id;
     private String name;
@@ -7,7 +9,17 @@ public class Concessionary {
     private String addres;
     private String number;
 
+    private List<Car> cars;
+
     public Concessionary() {
+    }
+
+    public List<Car> getCars() {
+        return cars;
+    }
+
+    public void setCars(List<Car> cars) {
+        this.cars = cars;
     }
 
     public Integer getId() {
