@@ -91,7 +91,7 @@
         tools:listitem="@android:layout/list_content" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/btnLaunchEditarConcesionaria"
         android:layout_width="63dp"
         android:layout_height="53dp"
         android:layout_marginTop="32dp"
