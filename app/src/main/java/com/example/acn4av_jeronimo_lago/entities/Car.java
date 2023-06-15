@@ -9,6 +9,16 @@ public class Car {
     private Integer year;
     private String color;
 
+    private Boolean expanded;
+
+    public Boolean getExpanded() {
+        return expanded;
+    }
+
+    public void setExpanded(Boolean expanded) {
+        this.expanded = expanded;
+    }
+
     public Car() {
     }
 

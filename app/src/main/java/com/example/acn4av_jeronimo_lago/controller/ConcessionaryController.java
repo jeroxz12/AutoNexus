@@ -128,10 +128,10 @@ import java.util.List;
 
          return concessionary;
      }
-     private List<Car> getCarsByConcessionaryId(int concessionaryId) {
+     public ArrayList<Car> getCarsByConcessionaryId(int concessionaryId) {
          SQLiteDatabase database = dbHelper.getReadableDatabase();
 
-         String[] columns = {"Car.id", "model", "brand", "price", "year", "color"};
+         String[] columns = {"Car.id AS car_id", "model", "brand", "price", "year", "color"};
          String selection = "Car_Per_Concessionary.id_concessionary=?";
          String[] selectionArgs = {String.valueOf(concessionaryId)};
 
@@ -139,8 +139,8 @@ import java.util.List;
 
          Cursor cursor = database.query(table, columns, selection, selectionArgs, null, null, null);
 
-         List<Car> cars = new ArrayList<>();
-         int columnIndexId = cursor.getColumnIndex("Car.id");
+         ArrayList<Car> cars = new ArrayList<>();
+         int columnIndexId = cursor.getColumnIndex("car_id");
          int columnIndexModel = cursor.getColumnIndex("model");
          int columnIndexBrand = cursor.getColumnIndex("brand");
          int columnIndexPrice = cursor.getColumnIndex("price");

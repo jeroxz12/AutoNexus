@@ -9,11 +9,18 @@ import com.example.acn4av_jeronimo_lago.entities.Car;
 
 public class CarController {
     private DbHelper dbHelper;
+    private SQLiteDatabase database;
 
     public CarController(Context context) {
         dbHelper = new DbHelper(context);
     }
+    public void open() {
+        database = dbHelper.getWritableDatabase();
+    }
 
+    public void close() {
+        dbHelper.close();
+    }
     public boolean addCarToConcessionary(Car car, int concessionaryId) {
         SQLiteDatabase database = dbHelper.getWritableDatabase();
 
@@ -37,5 +44,18 @@ public class CarController {
         long carPerConcessionaryId = database.insert("Car_Per_Concessionary", null, carPerConcessionaryValues);
 
         return carPerConcessionaryId != -1;
+    }
+
+    public boolean deleteCar(Integer id){
+        SQLiteDatabase database = dbHelper.getWritableDatabase();
+
+        String[] whereArgs = {String.valueOf(id)};
+
+        // Eliminar el registro de la tabla "car"
+        int deleted = database.delete("car", "id=?", whereArgs);
+
+        // Eliminar los registros relacionados en la tabla "car_per_concessionary"
+        int delte = database.delete("car_per_concessionary", "id_car=?", whereArgs);
+        return delte != -1 && deleted != -1;
     }
 }

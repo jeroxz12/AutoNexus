@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <resources>
+        <!-- Definición del tema de la aplicación -->
+        <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+            <!-- Personaliza los atributos del tema según sea necesario -->
+            <item name="colorPrimary">@color/primaryColor</item>
+            <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+            <item name="colorAccent">@color/accentColor</item>
+        </style>
+    </resources>
+
